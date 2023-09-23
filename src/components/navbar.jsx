@@ -10,9 +10,9 @@ import { Fragment } from "react";
 
 export default function Navbar({ setSidebarOpen }) {
   return (
-    <nav className="sticky top-4 z-40 flex flex-row flex-wrap items-center justify-between rounded-xl bg-white/10 p-2 backdrop-blur-xl">
-      <div className="ml-[6px]">
-        <div className="h-6 w-[224px] pt-1">
+    <nav className="sticky top-4 z-40 flex flex-row flex-wrap items-center justify-between rounded-xl bg-white/10 p-2 backdrop-blur-sm">
+      <div>
+        <div className="h-6 w-[300px] pt-1">
           <Link
             className="text-sm font-normal text-grey-700 hover:underline "
             to="session"
@@ -29,6 +29,7 @@ export default function Navbar({ setSidebarOpen }) {
             session
           </Link>
         </div>
+
         <p className="shrink text-[33px] capitalize text-grey-700">
           <Link
             to="session"
@@ -89,11 +90,11 @@ export default function Navbar({ setSidebarOpen }) {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute right-0 z-10 mt-2.5 w-56 origin-top-right bg-white py-2 rounded-md shadow-xl shadow-shadow-500 ring-1 ring-gray-900/5 focus:outline-none">
+            <Menu.Items className="absolute right-0 z-10 mt-2.5 w-40 origin-top-right bg-white py-2 rounded-md shadow-xl shadow-shadow-500 ring-1 ring-gray-900/5 focus:outline-none">
               <div className="p-4">
                 <div className="flex items-center gap-2">
                   <p className="text-sm font-bold text-navy-700">
-                    👋 Hey, Adela
+                    👋 Hi, Onoruoyiza
                   </p>{" "}
                 </div>
               </div>
