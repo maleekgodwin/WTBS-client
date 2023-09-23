@@ -11,8 +11,11 @@ export const signIn = async (payload) => {
       payload.email,
       payload.password
     );
-    console.log(res.user.uid);
-    await getClient(res.user.uid);
+    localStorage.setItem("client", JSON.stringify(res?.user));
+    const loggedInUserInfo = await getClient(res?.user?.uid);
+    loggedInUserInfo?.user_profile
+      ? (window.location.href = `/session/${res?.user?.uid}`)
+      : (window.location.href = `/profile/${res?.user?.uid}`);
   } catch (error) {
     // const errorMessage = error?.message;
     notify("error", "Invalid Credentials");

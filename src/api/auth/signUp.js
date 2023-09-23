@@ -12,7 +12,7 @@ export const signUp = async (payload) => {
       payload.password
     );
     await createClient(res.user.uid, payload);
-    window.location = "/proifle/" + res.user.uid;
+    window.location.href = "/";
   } catch (error) {
     const errorMessage = error?.customData?._tokenResponse?.error?.message;
     notify("error", errorMessage);

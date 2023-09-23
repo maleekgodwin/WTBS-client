@@ -8,7 +8,7 @@ export default function Button({ text, loading, type }) {
         <div className="flex items-center justify-center">
           <div className="relative">
             <div className="h-8 w-8 rounded-full border-t-4 border-b-4 border-[#6691be]"></div>
-            <div className="absolute top-0 left-0 h-8 w-8 rounded-full border-t-4 border-b-4 border-[#e6edf4] animate-spin"></div>
+            <div className="absolute top-0 left-0 h-8 w-8 rounded-full border-t-4 border-b-4 border-[#e6edf4] animate-[spin_.8s_linear_infinite]"></div>
           </div>
         </div>
       ) : (
