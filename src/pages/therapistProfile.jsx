@@ -14,8 +14,8 @@ const TherapistProfile = () => {
             Personal details and application.
           </p>
         </div>
-        <div className="flex justify-between">
-          <div className="mt-6 w-[60%]">
+        <div className="flex flex-col justify-between md:flex-row">
+          <div className="mt-6 md:w-[60%] w-full">
             <dl className="grid grid-cols-1 sm:grid-cols-2">
               <div className="relative flex items-center ">
                 <div
@@ -77,7 +77,7 @@ const TherapistProfile = () => {
               Book session
             </button>
           </div>
-          <div className="w-[35%] shadow-md rounded-lg p-4">
+          <div className="md:w-[35%] w-full shadow-md rounded-lg p-4">
             <div className="border-t border-gray-100 px-4 py-6 sm:col-span-2 sm:px-0">
               <dt className="text-sm font-medium leading-6 text-gray-900">
                 About
