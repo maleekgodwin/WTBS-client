@@ -5,15 +5,20 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getClient } from "../api/clients/getClient";
 import { UserIcon } from "@heroicons/react/20/solid";
+import { loadPage } from "../components/page-loader";
 
 const ClientProfile = () => {
   const params = useParams();
   const [clientInfo, setClientInfo] = useState();
+  const [loading, setLoading] = useState();
   useEffect(() => {
+    loadPage(true);
     getClient(params.id).then((res) => setClientInfo(res));
+    return loadPage(false);
   }, [params]);
 
   const handleProfileUpdate = async (e) => {
+    setLoading(true);
     e.preventDefault();
     const data = new FormData(e.target);
     await updateClient(params.id, {
@@ -22,6 +27,7 @@ const ClientProfile = () => {
       gender: data.get("gender"),
       dob: data.get("dob"),
     });
+    setLoading(false);
   };
 
   return (
@@ -158,6 +164,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    disabled
                     id="email"
                     name="email"
                     type="email"
@@ -170,13 +177,7 @@ const ClientProfile = () => {
             </div>
 
             <div className="mt-8 flex">
-              <Button type="submit" text="save" />
-              {/* <button
-                type="submit"
-                className="rounded-md bg-[#004792] px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Save
-              </button> */}
+              <Button type="submit" text="save" loading={loading} />
             </div>
           </form>
         </div>

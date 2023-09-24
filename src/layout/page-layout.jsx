@@ -4,11 +4,14 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import Alert from "../components/alert";
 import Sidebar from "../components/sidebar";
 import Navbar from "../components/navbar";
+import PageLoader from "../components/page-loader";
 
-export default function Layout({ children }) {
+export default function Layout({ children, pageName }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <>
+      <Alert />
+      <PageLoader />
       <div>
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
@@ -76,7 +79,7 @@ export default function Layout({ children }) {
         </div>
 
         <div className="lg:pl-72">
-          <Navbar setSidebarOpen={setSidebarOpen} />
+          <Navbar pageName={pageName} setSidebarOpen={setSidebarOpen} />
           <main className="mx-[12px] h-full flex-none transition-all md:pr-2">
             <div className="mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8">
               {children}

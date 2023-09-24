@@ -1,6 +1,3 @@
-// import { Fragment, useState } from "react";
-// import { Disclosure, Menu, Transition } from "@headlessui /react";
-// import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
   Cog6ToothIcon,
   VideoCameraIcon,
@@ -8,11 +5,7 @@ import {
   UserCircleIcon,
   IdentificationIcon,
 } from "@heroicons/react/24/outline";
-
-import {} from "@heroicons/react/20/solid";
-
 import { Link } from "react-router-dom";
-// import Alert from "../components/alert";
 import Logo from "../components/logo";
 
 const navigation = [
@@ -47,6 +40,8 @@ function classNames(...classes) {
 }
 
 export default function Sidebar() {
+  const currentPage = window.location.pathname;
+
   return (
     <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-[#f4f7fe] rounded-lg px-6 pb-4">
       <div className="pt-8 flex items-left ">
@@ -61,17 +56,17 @@ export default function Sidebar() {
                   <Link
                     to={item.href}
                     className={classNames(
-                      item.current
-                        ? "bg-gray-50 text-indigo-600"
-                        : "text-gray-700 hover:text-indigo-600 hover:bg-gray-50",
+                      currentPage.includes(item.href)
+                        ? "bg-gray-200  border-r-2 border-[#004792] text-[#004792]"
+                        : "text-gray-700 hover:text-[#004792] hover:bg-gray-100",
                       "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                     )}
                   >
                     <item.icon
                       className={classNames(
-                        item.current
-                          ? "text-indigo-600"
-                          : "text-gray-400 group-hover:text-indigo-600",
+                        currentPage.includes(item.href)
+                          ? "text-[#004792]"
+                          : "text-gray-400 group-hover:text-[#004792]",
                         "h-6 w-6 shrink-0"
                       )}
                       aria-hidden="true"
@@ -86,10 +81,10 @@ export default function Sidebar() {
           <li className="mt-auto">
             <Link
               href="#"
-              className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600"
+              className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-[#004792]"
             >
               <Cog6ToothIcon
-                className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600"
+                className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-[#004792]"
                 aria-hidden="true"
               />
               Settings

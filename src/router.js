@@ -6,6 +6,7 @@ import Therapist from "./pages/therapist";
 import TherapistProfile from "./pages/therapistProfile";
 import Schedule from "./pages/schedule";
 import ClientProfile from "./pages/clientProfile";
+import Error404 from "./pages/404";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/profile/:id",
     element: <ClientProfile />,
+  },
+  {
+    path: "/*",
+    element: <Error404 />,
   },
 ]);
 

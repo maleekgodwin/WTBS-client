@@ -4,7 +4,7 @@ import Layout from "../layout/page-layout";
 const Session = () => {
   return (
     <Layout pageName="Session">
-      <div className="w-[90%]  lg:w-[65%] m-auto py-12">
+      <div className="w-[90%]  lg:w-[65%] m-auto p-12 shadow-md rounded-lg">
         <h1 className="text-xl text-gray-900 font-bold mb-12">
           Upcoming Session
         </h1>
@@ -32,7 +32,7 @@ const Session = () => {
             </div>
           </div>
 
-          <div className="w-[90%] md:w-[50%] m-auto rounded-lg  bg-white px-6 py-5 shadow-md hover:border-gray-400">
+          <div className="w-[90%] md:w-[50%] m-auto  bg-white px-6 py-5 hover:border-gray-400">
             <div className="relative flex items-center">
               <img
                 className=" flex-shrink-0 h-14 w-14 rounded-full"

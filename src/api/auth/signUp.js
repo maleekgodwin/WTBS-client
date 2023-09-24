@@ -12,6 +12,7 @@ export const signUp = async (payload) => {
       payload.password
     );
     await createClient(res.user.uid, payload);
+    notify("sucess", "Acccount created, proceeed to login");
     window.location.href = "/";
   } catch (error) {
     const errorMessage = error?.customData?._tokenResponse?.error?.message;

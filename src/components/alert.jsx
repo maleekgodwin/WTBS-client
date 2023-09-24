@@ -22,7 +22,7 @@ export default function Alert() {
       {/* Success  Alert*/}
       <div
         id="success"
-        className="hidden shadow rounded-md fixed top-10 left-[50%] translate-x-[-50%] w-11/12 sm:w-4/5 lg:w-2/5 mx-auto bg-green-100 p-4 z-[100]"
+        className="hidden shadow-md rounded-md fixed top-10 left-[50%] translate-x-[-50%] w-11/12 sm:w-4/5 lg:w-2/5 mx-auto bg-green-100 p-4 z-[100]"
       >
         <div className="flex">
           <div className="flex-shrink-0">

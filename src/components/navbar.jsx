@@ -8,7 +8,8 @@ import {
 } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
 
-export default function Navbar({ setSidebarOpen }) {
+export default function Navbar({ setSidebarOpen, pageName }) {
+  const currentUser = JSON.parse(localStorage.getItem("user_client")) ?? {};
   return (
     <nav className="sticky top-4 z-40 flex flex-row flex-wrap items-center justify-between rounded-xl bg-white/10 p-2 backdrop-blur-sm">
       <div>
@@ -17,25 +18,22 @@ export default function Navbar({ setSidebarOpen }) {
             className="text-sm font-normal text-grey-700 hover:underline "
             to="session"
           >
-            Pages
+            Page
           </Link>
           <span className="mx-1 text-sm text-grey-700 hover:text-grey-700">
             /
           </span>
           <Link
             className="text-sm font-normal capitalize text-grey-700 hover:underline"
-            to="/session"
+            to="#"
           >
-            session
+            {pageName}
           </Link>
         </div>
 
         <p className="shrink text-[33px] capitalize text-grey-700">
-          <Link
-            to="session"
-            className="font-bold capitalize hover:text-grey-700"
-          >
-            Session
+          <Link to="#" className="font-bold capitalize hover:text-grey-700">
+            {pageName}
           </Link>
         </p>
       </div>
@@ -48,7 +46,7 @@ export default function Navbar({ setSidebarOpen }) {
           <input
             type="text"
             placeholder="Search..."
-            class="block h-full w-full rounded-full bg-[#e6edf4] text-sm font-medium text-grey-700 outline-none placeholder:!text-gray-400  sm:w-fit"
+            className="block h-full w-full rounded-full bg-[#e6edf4] text-sm font-medium text-grey-700 outline-none placeholder:!text-gray-400  sm:w-fit"
           />
         </div>
         <span
@@ -90,11 +88,11 @@ export default function Navbar({ setSidebarOpen }) {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute right-0 z-10 mt-2.5 w-40 origin-top-right bg-white py-2 rounded-md shadow-xl shadow-shadow-500 ring-1 ring-gray-900/5 focus:outline-none">
+            <Menu.Items className="absolute right-0 z-10 mt-2.5 w-56 origin-top-right bg-white py-2 rounded-md shadow-xl shadow-shadow-500 ring-1 ring-gray-900/5 focus:outline-none">
               <div className="p-4">
                 <div className="flex items-center gap-2">
                   <p className="text-sm font-bold text-navy-700">
-                    👋 Hi, Onoruoyiza
+                    👋 Hi, {currentUser?.user_profile?.first_name}
                   </p>{" "}
                 </div>
               </div>

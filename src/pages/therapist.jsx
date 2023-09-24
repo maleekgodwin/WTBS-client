@@ -3,7 +3,7 @@ import Layout from "../layout/page-layout";
 
 const Therapist = () => {
   return (
-    <Layout>
+    <Layout pageName={"Therapist"}>
       <TherapistContactList />
     </Layout>
   );
