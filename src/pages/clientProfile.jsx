@@ -76,6 +76,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     type="text"
                     name="first-name"
                     id="first-name"
@@ -95,6 +96,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     type="text"
                     name="last-name"
                     id="last-name"
@@ -114,6 +116,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     type="date"
                     name="dob"
                     id="dob"
@@ -164,6 +167,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     disabled
                     id="email"
                     name="email"
@@ -203,6 +207,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     id="current-password"
                     name="current_password"
                     type="password"
@@ -221,6 +226,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     id="new-password"
                     name="new_password"
                     type="password"
@@ -239,6 +245,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     id="confirm-password"
                     name="confirm_password"
                     type="password"
@@ -282,6 +289,7 @@ const ClientProfile = () => {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     id="logout-password"
                     name="password"
                     type="password"
