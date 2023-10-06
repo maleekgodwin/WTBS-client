@@ -3,59 +3,41 @@ import { Link } from "react-router-dom";
 
 const people = [
   {
-    name: "Jane Cooper",
+    name: "Bukola Yemi",
     title: "Behavioral Health Therapist",
     bill: "$50/session",
-    email: "janecooper@example.com",
-    telephone: "+1-202-555-0170",
+    email: "bukolayemi@example.com",
+    telephone: "+234-810-009-0122",
     imageUrl:
-      "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "https://media.licdn.com/dms/image/C5603AQFKywxsyh34uw/profile-displayphoto-shrink_400_400/0/1662368124289?e=1701907200&v=beta&t=mxhAY5HTOg5qwmjsiQsU9RXgF7SiyAw93YI9Fvyo2Fk",
   },
   {
-    name: "James Fred",
+    name: "Olasunkanmi Ajibola",
     title: "Counselor/Therapist",
     bill: "$70/session",
-    email: "janecooper@example.com",
+    email: "olasunkanmi@example.com",
     telephone: "+1-202-555-0170",
     imageUrl:
-      "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+      "https://media.licdn.com/dms/image/C4D03AQEazkqcGRrlFw/profile-displayphoto-shrink_400_400/0/1662898124522?e=1701907200&v=beta&t=PHw1EQ6U5-HfE64iOqqSoZGjZdAignGDRNTqi7BTlK8",
   },
   {
     imageUrl:
-      "https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "https://media.licdn.com/dms/image/D4D03AQEYU1mLzUWQ5A/profile-displayphoto-shrink_800_800/0/1695402183990?e=1701907200&v=beta&t=9U_t5xx5tkUBRPZtfwhTQ71_49oFyBnglNpJP5DS7Jw",
 
-    name: "Kebede Olawale Botha",
+    name: "Oghenevwede Emeni",
     title: "Clinical Social Worker",
     bill: "$55/session",
-    email: "janecooper@example.com",
+    email: "genevwe@example.com",
     telephone: "+1-202-555-0170",
   },
   {
-    name: "Cyrus Cosmo Reynell",
+    name: "Malik Godwin",
     title: "Clinical Therapist",
     bill: "$50/session",
-    email: "janecooper@example.com",
+    email: "malik@example.com",
     telephone: "+1-202-555-0170",
     imageUrl:
-      "https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=644&q=80",
-  },
-  {
-    name: "Abidemi Adebayo Botha",
-    title: "Behavior Analysis Therapist",
-    bill: "$40/session",
-    email: "janecooper@example.com",
-    telephone: "+1-202-555-0170",
-    imageUrl:
-      "https://images.unsplash.com/photo-1509305717900-84f40e786d82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=768&q=80",
-  },
-  {
-    name: "Alton Tyron Snider",
-    title: "Psychologist",
-    bill: "$60/session",
-    email: "janecooper@example.com",
-    telephone: "+1-202-555-0170",
-    imageUrl:
-      "https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80",
+      "https://media.licdn.com/dms/image/C4D03AQFw9Us-4vQB2Q/profile-displayphoto-shrink_400_400/0/1650474411691?e=1701302400&v=beta&t=vCEnf_uX1FwRt1K8D0UsIN7eDP63iU5x48WLXH-aMRM",
   },
 ];
 

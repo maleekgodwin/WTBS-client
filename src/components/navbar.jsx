@@ -69,7 +69,7 @@ export default function Navbar({ setSidebarOpen, pageName }) {
             <span className="sr-only">Open user menu</span>
             <img
               className="h-8 w-8 rounded-full bg-gray-50"
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              src="https://media.licdn.com/dms/image/D4D03AQGwPozmTfU5bw/profile-displayphoto-shrink_400_400/0/1676495990759?e=1701302400&v=beta&t=tA0bNOzo7t-49_tD9d9CpZjLFFNe11vqCFRm1Qh4C68"
               alt=""
             />
             <span className="hidden lg:flex lg:items-center">

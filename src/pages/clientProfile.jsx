@@ -4,8 +4,8 @@ import { updateClient } from "../api/clients/updateClient";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getClient } from "../api/clients/getClient";
-import { UserIcon } from "@heroicons/react/20/solid";
 import { loadPage } from "../components/page-loader";
+import { PencilIcon } from "@heroicons/react/24/outline";
 
 const ClientProfile = () => {
   const params = useParams();
@@ -30,6 +30,12 @@ const ClientProfile = () => {
     setLoading(false);
   };
 
+  const handleImageUpdate = async (e) => {
+    // setImgFile();
+    // e.preventDefault();
+    // await upload(e.target.files[0], params.id);
+  };
+
   return (
     <Layout pageName="Profile">
       {/* Settings forms */}
@@ -50,20 +56,31 @@ const ClientProfile = () => {
           >
             <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:max-w-xl sm:grid-cols-6">
               <div className="col-span-full flex items-center gap-x-8 ">
-                <div className="ring-1 ring-gray-100 rounded-lg h-24 w-24 grid place-items-center ">
-                  <UserIcon className=" h-12 w-12 text-gray-400 object-cover" />
-                </div>
-
-                <div>
-                  <button
-                    type="button"
-                    className="rounded-md bg-black/10 px-3 py-2 text-sm font-semibold text-gray-600 shadow-sm hover:bg-black/20"
+                <div className="h-32 w-32 rounded-full relative overflow-hidden shadow-md">
+                  <img
+                    className="h-full w-full rounded-full flex-none object-cover bg-gray-50"
+                    // src="https://www.smartlayers.io/img/Fortress%20Enebei%20-%20Software-Engineer.jpeg"
+                    // src="https://media.licdn.com/dms/image/C4D03AQFw9Us-4vQB2Q/profile-displayphoto-shrink_400_400/0/1650474411691?e=1701302400&v=beta&t=vCEnf_uX1FwRt1K8D0UsIN7eDP63iU5x48WLXH-aMRM"
+                    src="https://media.licdn.com/dms/image/D4D03AQGwPozmTfU5bw/profile-displayphoto-shrink_400_400/0/1676495990759?e=1701302400&v=beta&t=tA0bNOzo7t-49_tD9d9CpZjLFFNe11vqCFRm1Qh4C68"
+                    alt=""
+                  />
+                  <label
+                    htmlFor="file-input"
+                    className="w-full h-4 flex items-center justify-center py-1 absolute bottom-0 hover:bg-[#004792]/20  hover:h-full transition-all duration-300"
                   >
-                    Change avatar
-                  </button>
-                  <p className="mt-2 text-xs leading-5 text-gray-400">
-                    JPG, GIF or PNG. 1MB max.
-                  </p>
+                    <PencilIcon
+                      className="h-4 w-4 text-white"
+                      aria-hidden="true"
+                    />
+                  </label>
+                  <input
+                    id="file-input"
+                    type="file"
+                    accept="image/*"
+                    name="image"
+                    className="hidden"
+                    onChange={(e) => handleImageUpdate(e)}
+                  />
                 </div>
               </div>
 

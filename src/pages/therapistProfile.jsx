@@ -21,15 +21,17 @@ const TherapistProfile = () => {
                 <div
                   style={{
                     backgroundImage:
-                      "url(https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80)",
+                      "url(https://media.licdn.com/dms/image/D4D03AQEYU1mLzUWQ5A/profile-displayphoto-shrink_800_800/0/1695402183990?e=1701907200&v=beta&t=9U_t5xx5tkUBRPZtfwhTQ71_49oFyBnglNpJP5DS7Jw)",
                   }}
                   className="hoverEff flex-shrink-0 h-20 w-20 rounded-lg"
                 ></div>
                 <div className="flex-1 ml-3">
                   <p className="text-sm font-medium text-gray-900">
-                    Alton Tyron Snider
+                    Oghenevwede Emeni
                   </p>
-                  <p className="truncate text-sm text-gray-500">Psychologist</p>
+                  <p className="truncate text-sm text-gray-500">
+                    Clinical Social Worker
+                  </p>
                 </div>
               </div>
               <div className="border-t border-gray-100 px-4 py-6 sm:col-span-1 sm:px-0">
@@ -37,7 +39,7 @@ const TherapistProfile = () => {
                   Full name
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:mt-2">
-                  Alton Tyron Snider
+                  Oghenevwede Emeni
                 </dd>
               </div>
               <div className="border-t border-gray-100 px-4 py-6 sm:col-span-1 sm:px-0">
@@ -53,7 +55,7 @@ const TherapistProfile = () => {
                   Email address
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:mt-2">
-                  AltonSnider@gmail.com
+                  genevwe@example.com
                 </dd>
               </div>
               <div className="border-t border-gray-100 px-4 py-6 sm:col-span-1 sm:px-0">
@@ -83,13 +85,13 @@ const TherapistProfile = () => {
                 About
               </dt>
               <dd className="mt-1 text-sm leading-6 text-gray-700 sm:mt-2">
-                Best-selling author Dr. Alton Tyron Snider is the founder of the
-                Behavioral Clinic in Denver, Colorado. He has more than 20 years
-                of clinical experience as a licensed marriage and family
+                Best-selling author Dr. Oghenevwede Emeni is the founder of the
+                Behavioral Clinic in Denver, Colorado. She has more than 20
+                years of clinical experience as a licensed marriage and family
                 therapist, and nearly 20 years of experience running a private
                 practice. Her work focuses on helping fellow therapists find
                 purpose and fulfillment in private practice by exploring their
-                deepest motivations in life. Dr. Alton Tyron Snider currently
+                deepest motivations in life. Dr. Oghenevwede Emeni currently
                 lives in the Denver area with his partner, two children, and
                 GoldenDoodle named Roxy.
               </dd>

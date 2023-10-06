@@ -36,14 +36,12 @@ const Session = () => {
             <div className="relative flex items-center">
               <img
                 className=" flex-shrink-0 h-14 w-14 rounded-full"
-                src={
-                  "https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80"
-                }
+                src="https://media.licdn.com/dms/image/C4D03AQFw9Us-4vQB2Q/profile-displayphoto-shrink_400_400/0/1650474411691?e=1701302400&v=beta&t=vCEnf_uX1FwRt1K8D0UsIN7eDP63iU5x48WLXH-aMRM"
                 alt=""
               />
               <div className="flex-1 ml-3">
                 <p className="text-sm font-medium text-gray-900">
-                  Alton Tyron Snider
+                  Malik Godwin
                 </p>
                 <p className="truncate text-sm text-gray-500">Psychologist</p>
               </div>
